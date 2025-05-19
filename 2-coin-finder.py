@@ -48,8 +48,8 @@ def main():
     sents = int(input('Convert sents to coins: '))
 
     # If sent count is zero don't convert
-    if sents == 0:
-        print('Zero sents can not be divided into to coins')
+    if sents <= 0:
+        print('Zero or negative sents can not be divided into to coins')
         # Exit with one if 0 is given as an input
         exit(1)
     else:
